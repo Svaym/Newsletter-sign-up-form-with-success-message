@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-roboto font-normal text-black overflow-x-hidden md:bg-indigo-950 md:w-screen md:h-screen flex justify-center items-center
+  }
+}
+.red {
+  @apply border-red-600 text-red-500
+}
+.message {
+  @apply inline
+}
