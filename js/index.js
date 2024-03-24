@@ -13,11 +13,13 @@ btn.addEventListener(`click`, function(){
   }
   if (pattern.test(email) == true) {
     modal.style.display = "block";
-    error.classList.toggle('message')
-    inp.classList.toggle('red');
+    if (error.classList.contains('message')){
+      error.classList.remove('message')
+      inp.classList.remove('red');
+    }
   } else if(pattern.test(email) != true){
-    inp.classList.toggle('red');
-    error.classList.toggle('message')
+    inp.classList.add('red');
+    error.classList.add('message')
   }
   inp.value = '';
 })
