@@ -5,9 +5,7 @@ let inp = document.querySelector('#email');
 let error = document.querySelector('#error');
 btn.addEventListener(`click`, function(){
   let pattern = /[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-  console.log(inp.value);
   let email = inp.value
-  console.log(pattern.test(email))
   if (inp.value == '') {
     return;
   }
